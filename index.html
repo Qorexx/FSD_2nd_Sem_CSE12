@@ -1,11 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<title>Student Marks System</title>
+<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <h1>Hello World!</h1>
+
+<div class="container">
+
+<h2>Student Marks Management</h2>
+
+<input type="text" id="name" placeholder="Student Name">
+<input type="text" id="roll" placeholder="Roll Number">
+<input type="number" id="math" placeholder="Math Marks">
+<input type="number" id="science" placeholder="Science Marks">
+<input type="number" id="english" placeholder="English Marks">
+
+<br><br>
+
+<button onclick="addStudent()">Add Student</button>
+<button onclick="displayStudents()">Display Students</button>
+<button onclick="showHighScorers()">Average > 80</button>
+<button onclick="showFailed()">Failed Students</button>
+<button onclick="countStudents()">Count Students</button>
+
+<div id="output"></div>
+
+</div>
+
+<script src="script.js"></script>
+
 </body>
 </html>
